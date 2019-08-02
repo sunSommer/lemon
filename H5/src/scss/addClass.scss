@@ -1,0 +1,113 @@
+.wrapper{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	.header{
+		height: 54px;
+		background: #fae363;
+		display: flex;
+		align-items: center;
+		text-align: center !important; 
+		font-weight: bold;
+		p{
+			margin: 0 auto;
+			font-size: 16px;
+			color: #000;
+		}
+	}
+	.main{
+		margin-top: 12px;
+		.content{
+			height: 80px;
+			background: #fff;
+			padding: 0 8px;
+			border-bottom: 1px solid #ccc;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			p{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				text-align: center;
+				background: #fae363;
+				span{
+					font-size: 30px;
+					line-height: 40px;
+				}
+			}
+			input{
+				margin-left: 10px;
+				width: 160px;
+				border: 0;
+				background: none;
+			};
+			input::-webkit-input-placeholder{
+				font-size: 14px;
+			}
+		}
+		.sliderBanner{
+			height: 300px;
+			background: #fff;
+			.icon-slider{
+				height: 300px;
+				.list{
+					margin: 0;
+					padding: 0;
+					padding: 10px;
+					list-style: none;
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					li{
+						width: 20%;
+						height: 40px;
+						text-align: center;
+						margin-top: 10px;
+						p{
+							width: 40px;
+							height: 40px;
+							margin: 0 auto;
+							text-align: center;
+							border-radius: 50%;
+							background: #fae363;
+							span{
+								font-size: 30px;
+								line-height: 40px;
+							}
+						}
+					}
+				}
+			}
+			
+			.circle{
+				>div{
+					width: 20px;
+					height: 1px;
+					border-radius: 0;
+				}
+			}
+		}
+	}
+	.footer{
+		width: 100%;
+		height: 50px;
+		padding: 0 20px;
+		position: fixed;
+		bottom: 30px;
+		p{
+			button{
+				width: 100%;
+				height: 50px;
+				border-radius: 25px;
+				border: 0;
+				color: #fff;
+				font-size: 18px;
+				font-family: "微软雅黑";
+				box-shadow: 0 0 10px #fae363;
+				background: #fae363;
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="css/mui.picker.min.css">
+	</head>
+	<body>
+		<!-- 主界面菜单同时移动 -->
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable">
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				<!-- 菜单容器 -->
+				<aside class="mui-off-canvas-left" id="offCanvasSide">
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<!-- 菜单具体展示内容 -->
+
+						</div>
+					</div>
+				</aside>
+				<!-- 主页面标题 -->
+				<header class="mui-bar mui-bar-nav header">
+					<div class="title">
+						<ul>
+							<li>本月花费(元)</li>
+							<li class="money"></li>
+							<li>本月收入<span class="income">0.00</span><span>设置预算</span></li>
+						</ul>
+						<div class="date">
+							<span class="month">月</span><span class="year">2018-10</span>
+						</div>
+					</div>
+					<div class="list">
+						<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+						<ul>
+							<li class="active">账单</li>
+							<li>图表</li>
+						</ul>
+						<span class="mui-icon mui-icon-search"></span>
+					</div>
+					<div class="calen">
+						<ol>
+							<li><span class="mui-icon-extra mui-icon-extra-calendar"></span>10月19日</li>
+							<li>花费<span class="expense">8034.00</span></li>
+						</ol>
+					</div>
+				</header>
+				<div class="mui-content main">
+					<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<!--数据列表-->
+							<ul class="mui-table-view mui-table-view-chevron lists">
+								<!-- <li>
+									<ul id="OA_task_1" class="mui-table-view view">
+										<li class="mui-table-view-cell mui-transitioning">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red" style="transform: translate(0px, 0px);">删除</a>
+											</div>
+											<div class="mui-slider-handle handle" style="transform: translate(0px, 0px);">
+												<div class="left">
+													<span class="mui-icon mui-icon-contact"></span>
+													<ol>
+														<li>住宿</li>
+														<li>2018-01-01</li>
+													</ol>
+												</div>
+
+												<span style="color: green;">300.00</span>
+											</div>
+										</li>
+									</ul>
+								</li> -->
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mui-content main current">
+					<div class="mui-slider" id="box">
+						<div class="mui-slider-group">
+							<div class="mui-slider-item slider">
+								<div id="chart" style="width:18.75rem;height: 200px; margin: 0 auto;"></div>
+							</div>
+							<div class="mui-slider-item" >
+								<div id="outcome" style="width:18.75rem;height: 200px; margin: 0 auto;"></div>
+
+								
+							</div>
+						</div>
+						<div class="mui-slider-indicator circle">
+							<div class="mui-indicator mui-active"></div>
+							<div class="mui-indicator"></div>
+						</div>
+					</div>
+				</div>
+				<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active">
+						<span class="mui-icon mui-icon-home"></span>
+						<span class="mui-tab-label">首页</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon mui-icon-phone"></span>
+						<span class="mui-tab-label">电话</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon mui-icon-email"></span>
+						<span class="mui-tab-label">邮件</span>
+					</a>
+					<a class="mui-tab-item exit">
+						<span class="mui-icon mui-icon-undo"></span>
+						<span class="mui-tab-label">退出</span>
+					</a>
+				</nav>
+				<!-- 主页面内容容器 -->
+				<!-- <div class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						主界面具体展示内容
+
+					</div>
+				</div>
+				<div class="mui-off-canvas-backdrop"></div> -->
+			</div>
+		</div>
+
+		<div class="plus">
+			<span class="mui-icon mui-icon-plus"></span>
+		</div>
+
+
+		<script src="js/libs/require.js" type="text/javascript" charset="utf-8" data-main="js/javascripts/index.js"></script>
+	</body>
+</html>
